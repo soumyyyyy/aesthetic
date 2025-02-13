@@ -18,7 +18,7 @@
     --button-hover: #8063a0;
 }
 
-/* Base Styles */
+
 body {
     background: var(--bg-color);
     font-family: 'Poppins', sans-serif;
@@ -40,9 +40,6 @@ body {
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-h1, p {
-    color: var(--text-color);
-}
 
 #modeToggle {
     background: var(--button-bg);
