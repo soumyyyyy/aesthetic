@@ -1,0 +1,130 @@
+/* Light Mode Colors */
+:root {
+    --bg-color: linear-gradient(to right, #fbe3e3, #eab9be);
+    --text-color: #5a4b81;
+    --container-bg: #fff5e1;
+    --task-bg: #f9e4e4;
+    --button-bg: #dcb6e0;
+    --button-hover: #b59ac4;
+}
+
+/* Dark Mode Colors */
+.dark-mode {
+    --bg-color: linear-gradient(to right, #2d1e40, #4b3c69);
+    --text-color: #fff;
+    --container-bg: #3c2f4e;
+    --task-bg: #58436c;
+    --button-bg: #a685c4;
+    --button-hover: #8063a0;
+}
+
+/* Base Styles */
+body {
+    background: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.3s ease;
+}
+
+.container {
+    background: var(--container-bg);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1, p {
+    color: var(--text-color);
+}
+
+#modeToggle {
+    background: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+#modeToggle:hover {
+    background: var(--button-hover);
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid var(--button-bg);
+    border-radius: 8px;
+    outline: none;
+    background: var(--container-bg);
+    color: var(--text-color);
+}
+
+button {
+    background: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background: var(--button-hover);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background: var(--task-bg);
+    padding: 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+    min-height: 50px;
+}
+
+li span {
+    flex: 1;
+    color: var(--text-color);
+}
+
+li button {
+    background: var(--button-hover);
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background: #80539d;
+}
+
+/* Strike-through and Fade Effect */
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
