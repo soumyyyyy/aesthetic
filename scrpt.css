@@ -1,4 +1,4 @@
-/* Light Mode Colors */
+
 :root {
     --bg-color: linear-gradient(to right, #fbe3e3, #eab9be);
     --text-color: #5a4b81;
@@ -8,7 +8,6 @@
     --button-hover: #b59ac4;
 }
 
-/* Dark Mode Colors */
 .dark-mode {
     --bg-color: linear-gradient(to right, #2d1e40, #4b3c69);
     --text-color: #fff;
@@ -17,7 +16,6 @@
     --button-bg: #a685c4;
     --button-hover: #8063a0;
 }
-
 
 body {
     background: var(--bg-color);
@@ -120,7 +118,6 @@ li button:hover {
     background: #80539d;
 }
 
-/* Strike-through and Fade Effect */
 .completed {
     text-decoration: line-through;
     opacity: 0.5;

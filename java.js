@@ -47,7 +47,7 @@ function saveTasks() {
     localStorage.setItem("tasks", JSON.stringify(tasks)); // Local storage me save kar rahe hain
 }
 
-// 🔄 Function to load tasks from local storage
+//  load tasks from storage
 function loadTasks() {
     let storedTasks = JSON.parse(localStorage.getItem("tasks")) || []; // Local storage se tasks nikal rahe hain
 
